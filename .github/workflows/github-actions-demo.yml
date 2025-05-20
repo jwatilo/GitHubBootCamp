@@ -1,4 +1,4 @@
-name: GitHub Actions Demo
+sname: GitHub Actions Demo
 
 on:
   push:
@@ -21,7 +21,7 @@ jobs:
           echo "🎉 The job was triggered by event: ${{ github.event_name }}"
           echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ."
 
-      - uses: action/checkout@v3.3.0
+      - uses: actions/checkout@v3.3.0
 
       - name: List files in the repository
         run: |
